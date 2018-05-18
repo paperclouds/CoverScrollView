@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EB17C28906337EDB8B1BE37 /* libPods-CoverScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE8178416A28437CFF6234F /* libPods-CoverScrollView.a */; };
+		AA5ECBCA20AEB5F400C28C11 /* SCAdCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5ECBC520AEB5F300C28C11 /* SCAdCollectionViewLayout.m */; };
+		AA5ECBCB20AEB5F400C28C11 /* SCAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5ECBC920AEB5F300C28C11 /* SCAdView.m */; };
+		AA5ECBCF20AEB85700C28C11 /* CoverCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5ECBCD20AEB85700C28C11 /* CoverCollectionViewCell.m */; };
+		AA5ECBD020AEB85700C28C11 /* CoverCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5ECBCE20AEB85700C28C11 /* CoverCollectionViewCell.xib */; };
+		AA5ECBD320AEBFF000C28C11 /* CoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5ECBD220AEBFF000C28C11 /* CoverModel.m */; };
+		AADBDC8320AD70F500912488 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AADBDC8220AD70F500912488 /* AppDelegate.m */; };
+		AADBDC8620AD70F500912488 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AADBDC8520AD70F500912488 /* ViewController.m */; };
+		AADBDC8920AD70F500912488 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADBDC8720AD70F500912488 /* Main.storyboard */; };
+		AADBDC8B20AD70F700912488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADBDC8A20AD70F700912488 /* Assets.xcassets */; };
+		AADBDC8E20AD70F700912488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADBDC8C20AD70F700912488 /* LaunchScreen.storyboard */; };
+		AADBDC9120AD70F700912488 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AADBDC9020AD70F700912488 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BE8178416A28437CFF6234F /* libPods-CoverScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoverScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5ECBC520AEB5F300C28C11 /* SCAdCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAdCollectionViewLayout.m; sourceTree = "<group>"; };
+		AA5ECBC620AEB5F300C28C11 /* SCAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdView.h; sourceTree = "<group>"; };
+		AA5ECBC720AEB5F300C28C11 /* SCAdViewRenderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdViewRenderDelegate.h; sourceTree = "<group>"; };
+		AA5ECBC820AEB5F300C28C11 /* SCAdCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdCollectionViewLayout.h; sourceTree = "<group>"; };
+		AA5ECBC920AEB5F300C28C11 /* SCAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAdView.m; sourceTree = "<group>"; };
+		AA5ECBCC20AEB85700C28C11 /* CoverCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverCollectionViewCell.h; sourceTree = "<group>"; };
+		AA5ECBCD20AEB85700C28C11 /* CoverCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverCollectionViewCell.m; sourceTree = "<group>"; };
+		AA5ECBCE20AEB85700C28C11 /* CoverCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoverCollectionViewCell.xib; sourceTree = "<group>"; };
+		AA5ECBD120AEBFF000C28C11 /* CoverModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverModel.h; sourceTree = "<group>"; };
+		AA5ECBD220AEBFF000C28C11 /* CoverModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverModel.m; sourceTree = "<group>"; };
+		AADBDC7E20AD70F500912488 /* CoverScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoverScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AADBDC8120AD70F500912488 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AADBDC8220AD70F500912488 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AADBDC8420AD70F500912488 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AADBDC8520AD70F500912488 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AADBDC8820AD70F500912488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AADBDC8A20AD70F700912488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AADBDC8D20AD70F700912488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AADBDC8F20AD70F700912488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AADBDC9020AD70F700912488 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA110B1F6A1F243F27798713 /* Pods-CoverScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoverScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoverScrollView/Pods-CoverScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		DF9392C6726B378F1687C70B /* Pods-CoverScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoverScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoverScrollView/Pods-CoverScrollView.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AADBDC7B20AD70F500912488 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB17C28906337EDB8B1BE37 /* libPods-CoverScrollView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		296C4160CE7F8642EF2F9E31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8178416A28437CFF6234F /* libPods-CoverScrollView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA5ECBC420AEB5F300C28C11 /* SCAdView */ = {
+			isa = PBXGroup;
+			children = (
+				AA5ECBC720AEB5F300C28C11 /* SCAdViewRenderDelegate.h */,
+				AA5ECBC820AEB5F300C28C11 /* SCAdCollectionViewLayout.h */,
+				AA5ECBC520AEB5F300C28C11 /* SCAdCollectionViewLayout.m */,
+				AA5ECBC620AEB5F300C28C11 /* SCAdView.h */,
+				AA5ECBC920AEB5F300C28C11 /* SCAdView.m */,
+			);
+			path = SCAdView;
+			sourceTree = "<group>";
+		};
+		AADBDC7520AD70F500912488 = {
+			isa = PBXGroup;
+			children = (
+				AADBDC8020AD70F500912488 /* CoverScrollView */,
+				AADBDC7F20AD70F500912488 /* Products */,
+				DA359148AD5256DA052C446D /* Pods */,
+				296C4160CE7F8642EF2F9E31 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AADBDC7F20AD70F500912488 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AADBDC7E20AD70F500912488 /* CoverScrollView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AADBDC8020AD70F500912488 /* CoverScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				AA5ECBC420AEB5F300C28C11 /* SCAdView */,
+				AA5ECBCC20AEB85700C28C11 /* CoverCollectionViewCell.h */,
+				AA5ECBCD20AEB85700C28C11 /* CoverCollectionViewCell.m */,
+				AA5ECBCE20AEB85700C28C11 /* CoverCollectionViewCell.xib */,
+				AA5ECBD120AEBFF000C28C11 /* CoverModel.h */,
+				AA5ECBD220AEBFF000C28C11 /* CoverModel.m */,
+				AADBDC8120AD70F500912488 /* AppDelegate.h */,
+				AADBDC8220AD70F500912488 /* AppDelegate.m */,
+				AADBDC8420AD70F500912488 /* ViewController.h */,
+				AADBDC8520AD70F500912488 /* ViewController.m */,
+				AADBDC8720AD70F500912488 /* Main.storyboard */,
+				AADBDC8A20AD70F700912488 /* Assets.xcassets */,
+				AADBDC8C20AD70F700912488 /* LaunchScreen.storyboard */,
+				AADBDC8F20AD70F700912488 /* Info.plist */,
+				AADBDC9020AD70F700912488 /* main.m */,
+			);
+			path = CoverScrollView;
+			sourceTree = "<group>";
+		};
+		DA359148AD5256DA052C446D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA110B1F6A1F243F27798713 /* Pods-CoverScrollView.debug.xcconfig */,
+				DF9392C6726B378F1687C70B /* Pods-CoverScrollView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AADBDC7D20AD70F500912488 /* CoverScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AADBDC9420AD70F700912488 /* Build configuration list for PBXNativeTarget "CoverScrollView" */;
+			buildPhases = (
+				4F1968C19DE9F3F0A54445C5 /* [CP] Check Pods Manifest.lock */,
+				AADBDC7A20AD70F500912488 /* Sources */,
+				AADBDC7B20AD70F500912488 /* Frameworks */,
+				AADBDC7C20AD70F500912488 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoverScrollView;
+			productName = CoverScrollView;
+			productReference = AADBDC7E20AD70F500912488 /* CoverScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AADBDC7620AD70F500912488 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = hechang;
+				TargetAttributes = {
+					AADBDC7D20AD70F500912488 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = AADBDC7920AD70F500912488 /* Build configuration list for PBXProject "CoverScrollView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AADBDC7520AD70F500912488;
+			productRefGroup = AADBDC7F20AD70F500912488 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AADBDC7D20AD70F500912488 /* CoverScrollView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AADBDC7C20AD70F500912488 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AADBDC8E20AD70F700912488 /* LaunchScreen.storyboard in Resources */,
+				AADBDC8B20AD70F700912488 /* Assets.xcassets in Resources */,
+				AA5ECBD020AEB85700C28C11 /* CoverCollectionViewCell.xib in Resources */,
+				AADBDC8920AD70F500912488 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F1968C19DE9F3F0A54445C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoverScrollView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AADBDC7A20AD70F500912488 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5ECBCF20AEB85700C28C11 /* CoverCollectionViewCell.m in Sources */,
+				AA5ECBD320AEBFF000C28C11 /* CoverModel.m in Sources */,
+				AADBDC8620AD70F500912488 /* ViewController.m in Sources */,
+				AA5ECBCB20AEB5F400C28C11 /* SCAdView.m in Sources */,
+				AA5ECBCA20AEB5F400C28C11 /* SCAdCollectionViewLayout.m in Sources */,
+				AADBDC9120AD70F700912488 /* main.m in Sources */,
+				AADBDC8320AD70F500912488 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AADBDC8720AD70F500912488 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AADBDC8820AD70F500912488 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AADBDC8C20AD70F700912488 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AADBDC8D20AD70F700912488 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AADBDC9220AD70F700912488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AADBDC9320AD70F700912488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AADBDC9520AD70F700912488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA110B1F6A1F243F27798713 /* Pods-CoverScrollView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MC29DLSP7;
+				INFOPLIST_FILE = CoverScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hechang.CoverScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AADBDC9620AD70F700912488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF9392C6726B378F1687C70B /* Pods-CoverScrollView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MC29DLSP7;
+				INFOPLIST_FILE = CoverScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hechang.CoverScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AADBDC7920AD70F500912488 /* Build configuration list for PBXProject "CoverScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AADBDC9220AD70F700912488 /* Debug */,
+				AADBDC9320AD70F700912488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AADBDC9420AD70F700912488 /* Build configuration list for PBXNativeTarget "CoverScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AADBDC9520AD70F700912488 /* Debug */,
+				AADBDC9620AD70F700912488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AADBDC7620AD70F500912488 /* Project object */;
+}
