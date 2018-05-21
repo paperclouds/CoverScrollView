@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SCAdView.h"
 
 @interface ViewController : UIViewController
 
+/**
+ *  记录当前点击的indexPath
+ */
+@property (nonatomic, assign) NSInteger currentIndex;
+@property (nonatomic, strong) SCAdView *sdView;
 
 @end
 

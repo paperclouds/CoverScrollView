@@ -86,11 +86,15 @@ typedef NS_ENUM(NSInteger,SCAdViewScrollDirection) {
 /**
  *  @brief 点击了广告，返回广告信息
  */
--(void)sc_didClickAd:(id)adModel;
+-(void)sc_didClickAd:(NSInteger)index;
 
 @end
 
 @interface SCAdView : UIView
+/**
+ *   collection
+ */
+@property (nonatomic,strong)UICollectionView *collectionView;
 @property (nonatomic,weak)id<SCAdViewDelegate>delegate;
 /**
  *  @brief 构造方法

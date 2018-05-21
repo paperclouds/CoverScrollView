@@ -10,11 +10,13 @@
 		9EB17C28906337EDB8B1BE37 /* libPods-CoverScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE8178416A28437CFF6234F /* libPods-CoverScrollView.a */; };
 		AA5ECBCA20AEB5F400C28C11 /* SCAdCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5ECBC520AEB5F300C28C11 /* SCAdCollectionViewLayout.m */; };
 		AA5ECBCB20AEB5F400C28C11 /* SCAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5ECBC920AEB5F300C28C11 /* SCAdView.m */; };
-		AA5ECBCF20AEB85700C28C11 /* CoverCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5ECBCD20AEB85700C28C11 /* CoverCollectionViewCell.m */; };
-		AA5ECBD020AEB85700C28C11 /* CoverCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5ECBCE20AEB85700C28C11 /* CoverCollectionViewCell.xib */; };
-		AA5ECBD320AEBFF000C28C11 /* CoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5ECBD220AEBFF000C28C11 /* CoverModel.m */; };
+		AA5ECBDE20AEE53200C28C11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5ECBD520AEE53200C28C11 /* ViewController.m */; };
+		AA5ECBDF20AEE53200C28C11 /* CoverCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5ECBD820AEE53200C28C11 /* CoverCollectionViewCell.xib */; };
+		AA5ECBE020AEE53200C28C11 /* CoverCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5ECBDA20AEE53200C28C11 /* CoverCollectionViewCell.m */; };
+		AA5ECBE120AEE53200C28C11 /* CoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5ECBDC20AEE53200C28C11 /* CoverModel.m */; };
+		AA5ECBE420AEE5B100C28C11 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5ECBE320AEE5B100C28C11 /* SecondViewController.m */; };
+		AA5ECBE820AEE61D00C28C11 /* ADCardTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5ECBE620AEE61D00C28C11 /* ADCardTransition.m */; };
 		AADBDC8320AD70F500912488 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AADBDC8220AD70F500912488 /* AppDelegate.m */; };
-		AADBDC8620AD70F500912488 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AADBDC8520AD70F500912488 /* ViewController.m */; };
 		AADBDC8920AD70F500912488 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADBDC8720AD70F500912488 /* Main.storyboard */; };
 		AADBDC8B20AD70F700912488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADBDC8A20AD70F700912488 /* Assets.xcassets */; };
 		AADBDC8E20AD70F700912488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADBDC8C20AD70F700912488 /* LaunchScreen.storyboard */; };
@@ -28,16 +30,20 @@
 		AA5ECBC720AEB5F300C28C11 /* SCAdViewRenderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdViewRenderDelegate.h; sourceTree = "<group>"; };
 		AA5ECBC820AEB5F300C28C11 /* SCAdCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdCollectionViewLayout.h; sourceTree = "<group>"; };
 		AA5ECBC920AEB5F300C28C11 /* SCAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAdView.m; sourceTree = "<group>"; };
-		AA5ECBCC20AEB85700C28C11 /* CoverCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverCollectionViewCell.h; sourceTree = "<group>"; };
-		AA5ECBCD20AEB85700C28C11 /* CoverCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverCollectionViewCell.m; sourceTree = "<group>"; };
-		AA5ECBCE20AEB85700C28C11 /* CoverCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoverCollectionViewCell.xib; sourceTree = "<group>"; };
-		AA5ECBD120AEBFF000C28C11 /* CoverModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverModel.h; sourceTree = "<group>"; };
-		AA5ECBD220AEBFF000C28C11 /* CoverModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverModel.m; sourceTree = "<group>"; };
+		AA5ECBD520AEE53200C28C11 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AA5ECBD620AEE53200C28C11 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AA5ECBD820AEE53200C28C11 /* CoverCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoverCollectionViewCell.xib; sourceTree = "<group>"; };
+		AA5ECBD920AEE53200C28C11 /* CoverCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverCollectionViewCell.h; sourceTree = "<group>"; };
+		AA5ECBDA20AEE53200C28C11 /* CoverCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverCollectionViewCell.m; sourceTree = "<group>"; };
+		AA5ECBDC20AEE53200C28C11 /* CoverModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverModel.m; sourceTree = "<group>"; };
+		AA5ECBDD20AEE53200C28C11 /* CoverModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverModel.h; sourceTree = "<group>"; };
+		AA5ECBE220AEE5B100C28C11 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		AA5ECBE320AEE5B100C28C11 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		AA5ECBE620AEE61D00C28C11 /* ADCardTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADCardTransition.m; sourceTree = "<group>"; };
+		AA5ECBE720AEE61D00C28C11 /* ADCardTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCardTransition.h; sourceTree = "<group>"; };
 		AADBDC7E20AD70F500912488 /* CoverScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoverScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADBDC8120AD70F500912488 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AADBDC8220AD70F500912488 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AADBDC8420AD70F500912488 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AADBDC8520AD70F500912488 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AADBDC8820AD70F500912488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AADBDC8A20AD70F700912488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AADBDC8D20AD70F700912488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,6 +85,45 @@
 			path = SCAdView;
 			sourceTree = "<group>";
 		};
+		AA5ECBD420AEE53200C28C11 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AA5ECBD620AEE53200C28C11 /* ViewController.h */,
+				AA5ECBD520AEE53200C28C11 /* ViewController.m */,
+				AA5ECBE220AEE5B100C28C11 /* SecondViewController.h */,
+				AA5ECBE320AEE5B100C28C11 /* SecondViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AA5ECBD720AEE53200C28C11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA5ECBD820AEE53200C28C11 /* CoverCollectionViewCell.xib */,
+				AA5ECBD920AEE53200C28C11 /* CoverCollectionViewCell.h */,
+				AA5ECBDA20AEE53200C28C11 /* CoverCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA5ECBDB20AEE53200C28C11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA5ECBDC20AEE53200C28C11 /* CoverModel.m */,
+				AA5ECBDD20AEE53200C28C11 /* CoverModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA5ECBE520AEE61D00C28C11 /* ADCardTransition */ = {
+			isa = PBXGroup;
+			children = (
+				AA5ECBE720AEE61D00C28C11 /* ADCardTransition.h */,
+				AA5ECBE620AEE61D00C28C11 /* ADCardTransition.m */,
+			);
+			path = ADCardTransition;
+			sourceTree = "<group>";
+		};
 		AADBDC7520AD70F500912488 = {
 			isa = PBXGroup;
 			children = (
@@ -101,15 +146,12 @@
 			isa = PBXGroup;
 			children = (
 				AA5ECBC420AEB5F300C28C11 /* SCAdView */,
-				AA5ECBCC20AEB85700C28C11 /* CoverCollectionViewCell.h */,
-				AA5ECBCD20AEB85700C28C11 /* CoverCollectionViewCell.m */,
-				AA5ECBCE20AEB85700C28C11 /* CoverCollectionViewCell.xib */,
-				AA5ECBD120AEBFF000C28C11 /* CoverModel.h */,
-				AA5ECBD220AEBFF000C28C11 /* CoverModel.m */,
+				AA5ECBE520AEE61D00C28C11 /* ADCardTransition */,
+				AA5ECBD420AEE53200C28C11 /* Controller */,
+				AA5ECBDB20AEE53200C28C11 /* Model */,
+				AA5ECBD720AEE53200C28C11 /* View */,
 				AADBDC8120AD70F500912488 /* AppDelegate.h */,
 				AADBDC8220AD70F500912488 /* AppDelegate.m */,
-				AADBDC8420AD70F500912488 /* ViewController.h */,
-				AADBDC8520AD70F500912488 /* ViewController.m */,
 				AADBDC8720AD70F500912488 /* Main.storyboard */,
 				AADBDC8A20AD70F700912488 /* Assets.xcassets */,
 				AADBDC8C20AD70F700912488 /* LaunchScreen.storyboard */,
@@ -188,7 +230,7 @@
 			files = (
 				AADBDC8E20AD70F700912488 /* LaunchScreen.storyboard in Resources */,
 				AADBDC8B20AD70F700912488 /* Assets.xcassets in Resources */,
-				AA5ECBD020AEB85700C28C11 /* CoverCollectionViewCell.xib in Resources */,
+				AA5ECBDF20AEE53200C28C11 /* CoverCollectionViewCell.xib in Resources */,
 				AADBDC8920AD70F500912488 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,11 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA5ECBCF20AEB85700C28C11 /* CoverCollectionViewCell.m in Sources */,
-				AA5ECBD320AEBFF000C28C11 /* CoverModel.m in Sources */,
-				AADBDC8620AD70F500912488 /* ViewController.m in Sources */,
+				AA5ECBDE20AEE53200C28C11 /* ViewController.m in Sources */,
+				AA5ECBE820AEE61D00C28C11 /* ADCardTransition.m in Sources */,
+				AA5ECBE120AEE53200C28C11 /* CoverModel.m in Sources */,
 				AA5ECBCB20AEB5F400C28C11 /* SCAdView.m in Sources */,
 				AA5ECBCA20AEB5F400C28C11 /* SCAdCollectionViewLayout.m in Sources */,
+				AA5ECBE420AEE5B100C28C11 /* SecondViewController.m in Sources */,
+				AA5ECBE020AEE53200C28C11 /* CoverCollectionViewCell.m in Sources */,
 				AADBDC9120AD70F700912488 /* main.m in Sources */,
 				AADBDC8320AD70F500912488 /* AppDelegate.m in Sources */,
 			);

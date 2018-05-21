@@ -7,12 +7,14 @@
 //
 
 #import "ViewController.h"
-#import "SCAdView.h"
 #import "CoverCollectionViewCell.h"
+#import "SecondViewController.h"
 
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 
-@interface ViewController ()<SCAdViewDelegate>
+@interface ViewController ()<SCAdViewDelegate,UINavigationControllerDelegate>
+
+@property (nonatomic, copy) NSArray *imageArrays;
 
 @end
 
@@ -26,9 +28,9 @@
 }
 
 - (void)layoutCoverView{
-    NSArray *imageArrays = @[@"1",@"2",@"3",@"4",@"5"];
-    SCAdView *sdView = [[SCAdView alloc]initWithBuilder:^(SCAdViewBuilder *builder) {
-        builder.adArray = imageArrays;
+    self.imageArrays = @[@"0",@"1",@"2",@"3",@"4",@"5",@"6"];
+    self.sdView = [[SCAdView alloc]initWithBuilder:^(SCAdViewBuilder *builder) {
+        builder.adArray = self.imageArrays;
         builder.viewFrame = CGRectMake(0, 100, kScreenWidth, 200);
         builder.adItemSize = CGSizeMake(120, 120);
         builder.minimumLineSpacing = -50;
@@ -36,19 +38,24 @@
         builder.threeDimensionalScale = 1.45;
         builder.itemCellNibName = @"CoverCollectionViewCell";
     }];
-    sdView.backgroundColor = [UIColor blackColor];
-    sdView.delegate = self;
-    [self.view addSubview:sdView];
+    self.sdView.backgroundColor = [UIColor blackColor];
+    self.sdView.delegate = self;
+    [self.view addSubview:self.sdView];
 }
 
 #pragma mark - SCAdViewDelegate
 
--(void)sc_didClickAd:(id)adModel{
-    
+-(void)sc_didClickAd:(NSInteger)index{
+    NSInteger count = self.imageArrays.count;
+    self.currentIndex = index + 1000;
+    SecondViewController *second = [[SecondViewController alloc]init];
+    second.index = index % count;
+    self.navigationController.delegate = second;
+    [self.navigationController pushViewController:second animated:YES];
 }
 
 -(void)sc_scrollToIndex:(NSInteger)index{
-    
+
 }
 
 - (void)didReceiveMemoryWarning {

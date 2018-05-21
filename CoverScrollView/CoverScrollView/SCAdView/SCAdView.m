@@ -22,6 +22,8 @@
 #define SC_ERROR(_DESC_)  NSCAssert(0,_DESC_)
 ///轮播两侧准备的item倍数 count of prepared item group at the both side
 #define SC_PREPARE_ITEM_TIME 2
+//获取系统版本
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 @interface SCAdView()<SCCollectionViewFlowLayoutDelegate>
 {
     SCAdViewBuilder *_builder;
@@ -40,10 +42,6 @@
 @end
 
 @interface SCAdView()<UICollectionViewDelegate,UICollectionViewDataSource>
-/**
- *   collection
- */
-@property (nonatomic,strong)UICollectionView *collectionView;
 /**
  *   data
  */
@@ -122,7 +120,11 @@
         layout.sectionInset = UIEdgeInsetsMake(y_inset,0,y_inset,0);
     }else{
     CGFloat x_inset =(self.frame.size.width-layout.itemSize.width) / 2.f;
-    layout.sectionInset = UIEdgeInsetsMake(0, x_inset, 0, x_inset);
+        if (@available(iOS 11.0, *)) {
+        layout.sectionInset = UIEdgeInsetsMake(0, x_inset, 0, x_inset);
+        }else{
+        layout.sectionInset = UIEdgeInsetsMake(-64, x_inset, 0, x_inset);
+        }
     }
     self.collectionView = [[UICollectionView alloc]initWithFrame:(CGRect){0,0,self.frame.size} collectionViewLayout:layout];
     self.collectionView.showsVerticalScrollIndicator = NO;
@@ -162,12 +164,16 @@
     CGPoint pInUnderView = [self convertPoint:self.collectionView.center toView:self.collectionView];
     // 获取中间的indexpath
     NSIndexPath *indexpath = [self.collectionView indexPathForItemAtPoint:pInUnderView];
+    NSInteger currentRow = indexpath.row;
+    if (IOS_VERSION < 9) {
+        currentRow = currentRow - 1;
+    }
     // 获取滑动目标的indexPath
     NSIndexPath *to_indexPath;
     if(_builder.autoScrollDirection==SCAdViewScrollDirectionRight || _builder.autoScrollDirection==SCAdViewScrollDirectionBotom){
-        to_indexPath=[NSIndexPath indexPathForRow:indexpath.row+1 inSection:0];//向右或向下
+        to_indexPath=[NSIndexPath indexPathForRow:currentRow+1 inSection:0];//向右或向下
     }else{
-        to_indexPath=[NSIndexPath indexPathForRow:indexpath.row-1 inSection:0];//向左或向上
+        to_indexPath=[NSIndexPath indexPathForRow:currentRow-1 inSection:0];//向左或向上
     }
     if (_builder.autoScrollDirection>1) {
         [self.collectionView scrollToItemAtIndexPath:to_indexPath atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:YES];
@@ -189,6 +195,7 @@
 {
     id model = self.dataArray[indexPath.item];
     UICollectionViewCell<SCAdViewRenderDelegate> *cell = [collectionView dequeueReusableCellWithReuseIdentifier:SC_AD_CELL_IDENTIFIER forIndexPath:indexPath];
+    cell.tag = indexPath.row+1000;
     [cell setModel:model];
     return cell;
 }
@@ -200,12 +207,16 @@
     
     // 获取中间的indexpath
     NSIndexPath *indexpathNew = [collectionView indexPathForItemAtPoint:pInUnderView];
-    NSLog(@"%ld",indexpathNew.row);
-    if (indexPath.row == indexpathNew.row)
+    NSInteger currentRow = indexpathNew.row;
+    if (IOS_VERSION < 9) {
+        currentRow = currentRow - 1;
+    }
+
+    if (indexPath.row == currentRow)
     {
         //点击了中间的广告
         if (self.delegate &&[self.delegate respondsToSelector:@selector(sc_didClickAd:)]) {
-            [self.delegate sc_didClickAd:self.dataArray[indexPath.row]];
+            [self.delegate sc_didClickAd:indexPath.row];
         }
     }
     else
@@ -240,8 +251,12 @@
     // 获取中间的indexpath
     NSIndexPath *indexpath = [self.collectionView indexPathForItemAtPoint:pInUnderView];
     NSInteger itemCount =_builder.adArray.count;
+    NSInteger currentRow = indexpath.row;
+    if (IOS_VERSION < 9 &&(indexpath.row+1)/itemCount != 5) {
+        currentRow = currentRow - 1;
+    }
     if (indexpath.row<itemCount*SC_PREPARE_ITEM_TIME || indexpath.row>=itemCount*(SC_PREPARE_ITEM_TIME+1)) {
-        NSIndexPath *to_indexPath =[NSIndexPath indexPathForRow:indexpath.row%itemCount+itemCount*SC_PREPARE_ITEM_TIME inSection:0];
+        NSIndexPath *to_indexPath =[NSIndexPath indexPathForRow:currentRow%itemCount+itemCount*SC_PREPARE_ITEM_TIME inSection:0];
         if (_builder.autoScrollDirection>1) {
             [self.collectionView scrollToItemAtIndexPath:to_indexPath atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:NO];
         }else{
