@@ -5,4 +5,4 @@
 
 新增点击图片跳转，图片放大动画效果
 
-![CoverScrollView.gif](https://upload-images.jianshu.io/upload_images/2466108-f92f8b406dd0ff93.gif?imageMogr2/auto-orient/strip)
+![CoverScrollView.gif](https://upload-images.jianshu.io/upload_images/2466108-38774c157769daa6.gif?imageMogr2/auto-orient/strip)
